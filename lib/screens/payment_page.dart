@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/screens/qr_create.dart';
 import 'package:mobile_app/screens/qr_page.dart';
+import 'package:mobile_app/screens/qr_scan.dart';
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({Key? key}) : super(key: key);
@@ -101,7 +103,7 @@ class _PaymentPageState extends State<PaymentPage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => const QRGenerator() ));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>  QRScanPage() ));
           },
         label: const Text(
           "Next",
